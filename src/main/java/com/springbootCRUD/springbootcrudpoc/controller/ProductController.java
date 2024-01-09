@@ -39,13 +39,13 @@ public class ProductController {
 	}
 
 	// For getting a product based on its ID
-	@GetMapping("/product/{id}")
+	@GetMapping("/productById/{id}")
 	public Product findProductById(@PathVariable int id) {
 		return service.getProductById(id);
 	}
 
 	// For getting a product based on its name
-	@GetMapping("/product/{name}")
+	@GetMapping("/productByName/{name}")
 	public Product findProductByName(@PathVariable String name) {
 		return service.getProductByName(name);
 	}
@@ -55,11 +55,11 @@ public class ProductController {
 	public Product updateProduct(@RequestBody Product product) {
 		return service.updateProduct(product);
 	}
-	
+
 	// For deleting a product based on its ID
-		@DeleteMapping("/delete/{id}")
-		public String deleteProduct(@PathVariable int id) {
-			return service.deleteProductById(id);
-		}
-	
+	@DeleteMapping("/delete/{id}")
+	public String deleteProduct(@PathVariable int id) {
+		return service.deleteProductById(id);
+	}
+
 }
