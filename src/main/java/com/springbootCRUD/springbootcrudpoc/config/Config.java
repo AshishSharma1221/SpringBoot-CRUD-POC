@@ -16,8 +16,8 @@ public JavaMailSender getMailSender()
 	JavaMailSenderImpl javaMailSender = new JavaMailSenderImpl();
 	javaMailSender.setHost("smtp-mail.outlook.com");
 	javaMailSender.setPort(587);
-	javaMailSender.setUsername("faaltu840@outlook.com");
-	javaMailSender.setPassword("Asad@1234");
+	javaMailSender.setUsername("#####@outlook.com");
+	javaMailSender.setPassword("#####");
 	
 	Properties javaMailProperties = new Properties();
 	javaMailProperties.put("mail.smtp.starttls.enable", "true");
